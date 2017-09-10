@@ -1,10 +1,10 @@
-import queryString from 'query-string'
+var queryString = require('query-string')
 
-let parameters = {}
+var parameters = {}
 try {
     parameters = queryString.parse(window.location.search)
 } catch(e) {
 
 }
 
-export default parameters
+module.exports = parameters
